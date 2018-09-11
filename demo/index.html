@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+  <title>WebToast</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+ 
+  
+</head>
+
+<body>
+
+  <button onclick="webToast.Success({
+                 status:'Wow !',
+                 message:'You are success '
+                 })">Success</button>
+
+<button onclick="webToast.Danger({
+                 status:'Sorry !',
+                 message:'I have failed to complete the software within short time',
+                 delay:false
+                 })">Danger</button>
+
+
+<button onclick="webToast.Info({
+                 status:'Hello !',
+                 message:'I always try to learn',delay:1000
+                 })">Info</button>
+
+
+<button onclick="var mss= webToast.loading({
+                 status:'Loading...',
+                 message:'Please Wait..'
+                 });">Loading</button>
+
+ 
+
+  
+
+    <script  src="../dist/webToast.min.js"></script>
+
+
+
+
+</body>
+
+</html>
