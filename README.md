@@ -24,19 +24,19 @@ setTimeout(function(){
 #Use for Alert...
 <pre>
  webToast.Success({
-                 status:'Sorry !',
-                 message:'I have failed to complete the software within short time',
+                 status:'Wow !',
+                 message:'You are success',
                    /* Default delay time 3 second */
                  })
       webToast.Info({
-                 status:'Sorry !',
-                 message:'I have failed to complete the software within short time',
+                 status:'Hello !',
+                 message:'I always try to learn',
                  delay:false  /* Never hide autometically */
                  })
                  
      webToast.Danger({
                  status:'Sorry !',
-                 message:'I have failed to complete the software within short time',
+                 message:'I have failed to complete',
                  delay:5000 /* 5 second will stay */
                  })
 </pre>
