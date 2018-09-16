@@ -52,6 +52,6 @@ setTimeout(function(){
 </ul>
 
 #License
-<p><a href="https://github.com/nuxt/nuxt.js/blob/dev/LICENSE.md">MIT</a></p>
+<p>The MIT License (MIT)</p>
 
 <p>Author: <a href="https://alemran.me">AL EMRAN</a></p>
