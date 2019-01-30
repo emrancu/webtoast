@@ -7,8 +7,10 @@
 
 
 #Use for ConfirmBox...
+ 
+ 
 <pre>
-<button id="conf">  Check ConfirmBox </button>
+
 
 $("#conf").click(function(){
 
