@@ -1,6 +1,6 @@
 # webToast
-<p>A jQuery plugin for alerting user and loading box.</p>
-<p> You can easily push  Danger, Info & Success alert to user  and you can show loading box when need load data from API.</p>
+<p>A jQuery plugin for alerting, confirming and loading.</p>
+<p> You can easily push  Danger, Info & Success alert to user ,get confirmation from user and  show loading box when need load data from API.</p>
 <p>Check Demo <a target="_blank" href="https://alemran.me/demo/webToast">Here</a></p>
 
 <div class="highlight highlight-text-html-basic">
