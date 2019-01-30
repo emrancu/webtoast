@@ -64,6 +64,7 @@ setTimeout(function(){
 
 #Features
 <ul> 
+<li> Confirmation Dialog </li>
 <li> Loading Alert</li>
 <li> Info Alert</li>
 <li> Success Alert</li>
