@@ -5,6 +5,25 @@
 
 <div class="highlight highlight-text-html-basic">
 
+
+#Use for ConfirmBox...
+<pre>
+<button id="conf">  Check ConfirmBox </button>
+
+$("#conf").click(function(){
+
+  var confirmBox= webToast.confirm('Are You Sure ?');
+
+  confirmBox.click(function(){
+    alert('confirmed');
+ 
+  }) 
+
+})
+
+</pre>
+
+
 #Use for Loading...
 <pre>
 var Loading= webToast.loading({

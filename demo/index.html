@@ -37,12 +37,27 @@
                  });">Loading</button>
 
  
-
+<button id="conf">  Check Confirm Box</button>
+  
   
 
     <script  src="../dist/webToast.min.js"></script>
 
+<script>
+ 
+$("#conf").click(function(){
 
+  var confirmBox= webToast.confirm('Are You Sure ?');
+
+  confirmBox.click(function(){
+    alert('confirmed Data');
+   
+  }) 
+
+})
+
+  
+</script>
 
 
 </body>

@@ -115,6 +115,54 @@ position: absolute;
 }
 
  
+.toastConfirm>.toastContent{
+  padding: 0px 10px;
+    min-width: 300px;
+
+}
+
+.toastConfirm>.toastContent>p{
+  font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 6px;    
+    padding-bottom: 5px;
+
+}
+
+.toastConfirm>.toastContent button{
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: 0px solid;
+    
+    color: white;
+
+}
+
+.toastConfirm>.toastContent button[data-confirm]{
+  border: 1px solid green;
+    background: #1f6f1f;
+
+}
+
+.toastConfirm>.toastContent button[data-cancel]{
+  border: 1px solid #ef6658;
+    background: #ef6658; 
+    float: right;
+
+}
+
+.ConfirmConainer::after{
+  content: '';
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,.4);
+    z-index: -1;
+}
 
 
 .loader {
