@@ -1,14 +1,18 @@
 # webToast
+<<<<<<< HEAD
 <p>A jQuery plugin for alerting user and loading box.</p>
 <p> You can easily push  Danger, Info & Success alert to user  and you can show loading box when need load data from API.</p>
 <p>Check Details Demo <a target="_blank" href="https://alemran.me/demo/webToast">Here</a></p>
+  
 
 <div class="highlight highlight-text-html-basic">
 
 
 #Use for ConfirmBox...
+ 
+ 
 <pre>
-<button id="conf">  Check ConfirmBox </button>
+
 
 $("#conf").click(function(){
 
@@ -67,6 +71,7 @@ setTimeout(function(){
 
 #Features
 <ul> 
+<li> Confirmation Dialog </li>
 <li> Loading Alert</li>
 <li> Info Alert</li>
 <li> Success Alert</li>
