@@ -8,43 +8,639 @@
   <title>WebToast</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
  
+  <style>
+*{
+  box-sizing: border-box
+}
+
+  .box-container{
+    float:left;
+    width:50%;
+    padding: 10px;
+  }
   
+  .box-container>.box{
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 6px 8px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
+    padding:20px;
+    border-radius: 4px;
+  }
+
+  .box-container>.box code{
+    display: block;
+    margin-bottom: 10px;
+    color: #e80c3d;
+  }
+
+  </style>
 </head>
 
 <body>
 
-  <button onclick="webToast.Success({
-                 status:'Wow !',
-                 message:'You are success '
-                 })">Success</button>
+  <h3>
+    Alert Danger
+  </h3>
 
-<button onclick="webToast.Danger({
-                 status:'Sorry !',
-                 message:'I have failed to complete the software within short time',
-                 delay:false
-                 })">Danger</button>
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Danger({
+          status:'Wow !',
+          message:'You are success '
+          }) 
+    </code>
+    
+    <button onclick="webToast.Danger({
+      status:'Wow !',
+      message:'You are success '
+      })"> Default Danger (default deay 3s)</button>
+
+  </div>
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Danger({
+          status:'Wow !',
+          message:'You are success ',
+          align:'topleft'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Danger({
+      status:'Wow !',
+      message:'You are success ',
+          align:'topleft'
+      })">  Danger- Align Top Left</button>
+
+  </div>
+</div>
+  
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Danger({
+          status:'Wow !',
+          message:'You are success ',
+          align:'topcenter'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Danger({
+      status:'Wow !',
+      message:'You are success ',
+          align:'topcenter'
+      })">  Danger- Align Top Center</button>
+
+  </div>
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Danger({
+          status:'Wow !',
+          message:'You are success ',
+          align:'bottomleft'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Danger({
+      status:'Wow !',
+      message:'You are success ',
+      align:'bottomleft'
+      })">  Danger- Align bottom left</button>
+
+  </div>
+</div>
+  
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Danger({
+          status:'Wow !',
+          message:'You are Danger ',
+          delay:50000,
+          align:'bottomright'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Danger({
+      status:'Wow !',
+      message:'You are success ',
+      delay:50000,
+      align:'bottomright'
+      })">  Danger- Align bottom right</button>
+
+  </div>
+</div>
+  
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Danger({
+          status:'Wow !',
+          message:'You are success ',
+          delay:5000,
+          align:'bottomcenter'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Danger({
+      status:'Wow !',
+      message:'You are success ',
+      delay:5000,
+      align:'bottomcenter'
+      })">  Danger- Align bottom Center</button>
+
+  </div>
+</div>
 
 
-<button onclick="webToast.Info({
-                 status:'Hello !',
-                 message:'I always try to learn',delay:1000
-                 })">Info</button>
+
+<h3>
+    Alert Success
+  </h3>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Success({
+          status:'Wow !',
+          message:'You are success '
+          }) 
+    </code>
+    
+    <button onclick="webToast.Success({
+      status:'Wow !',
+      message:'You are success '
+      })"> Default Success (default deay 3s)</button>
+
+  </div>
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Success({
+          status:'Wow !',
+          message:'You are success ',
+          align:'topleft'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Success({
+      status:'Wow !',
+      message:'You are success ',
+          align:'topleft'
+      })">  Success- Align Top Left</button>
+
+  </div>
+</div>
+  
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Success({
+          status:'Wow !',
+          message:'You are success ',
+          align:'topcenter'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Success({
+      status:'Wow !',
+      message:'You are success ',
+          align:'topcenter'
+      })">  Success- Align Top Center</button>
+
+  </div>
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Success({
+          status:'Wow !',
+          message:'You are success ',
+          align:'bottomleft'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Success({
+      status:'Wow !',
+      message:'You are success ',
+      align:'bottomleft'
+      })">  Success- Align bottom left</button>
+
+  </div>
+</div>
+  
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Success({
+          status:'Wow !',
+          message:'You are success ',
+          delay:50000,
+          align:'bottomright'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Success({
+      status:'Wow !',
+      message:'You are success ',
+      delay:50000,
+      align:'bottomright'
+      })">  Success- Align bottom right</button>
+
+  </div>
+</div>
+  
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Success({
+          status:'Wow !',
+          message:'You are success ',
+          delay:5000,
+          align:'bottomcenter'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Success({
+      status:'Wow !',
+      message:'You are success ',
+      delay:5000,
+      align:'bottomcenter'
+      })">  Success- Align bottom Center</button>
+
+  </div>
+</div>
 
 
-<button onclick="var mss= webToast.loading({
-                 status:'Loading...',
-                 message:'Please Wait..'
-                 });">Loading</button>
 
- 
-<button id="conf">  Check Confirm Box</button>
+
+
+<h3>
+    Alert Info
+  </h3>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Info({
+          status:'Wow !',
+          message:'You are success '
+          }) 
+    </code>
+    
+    <button onclick="webToast.Info({
+      status:'Wow !',
+      message:'You are success '
+      })"> Default Info (default deay 3s)</button>
+
+  </div>
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Info({
+          status:'Wow !',
+          message:'You are success ',
+          align:'topleft'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Info({
+      status:'Wow !',
+      message:'You are success ',
+          align:'topleft'
+      })">  Info- Align Top Left</button>
+
+  </div>
+</div>
+  
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Info({
+          status:'Wow !',
+          message:'You are success ',
+          align:'topcenter'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Info({
+      status:'Wow !',
+      message:'You are success ',
+          align:'topcenter'
+      })">  Info- Align Top Center</button>
+
+  </div>
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Info({
+          status:'Wow !',
+          message:'You are success ',
+          align:'bottomleft'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Info({
+      status:'Wow !',
+      message:'You are success ',
+      align:'bottomleft'
+      })">  Info- Align bottom left</button>
+
+  </div>
+</div>
+  
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Info({
+          status:'Wow !',
+          message:'You are Info ',
+          delay:50000,
+          align:'bottomright'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Success({
+      status:'Wow !',
+      message:'You are success ',
+      delay:50000,
+      align:'bottomright'
+      })">  Info- Align bottom right</button>
+
+  </div>
+</div>
+  
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <code>
+       webToast.Info({
+          status:'Wow !',
+          message:'You are success ',
+          delay:5000,
+          align:'bottomcenter'
+          }) 
+    </code>
+    
+    <button onclick="webToast.Info({
+      status:'Wow !',
+      message:'You are success ',
+      delay:5000,
+      align:'bottomcenter'
+      })">  Info- Align bottom Center</button>
+
+  </div>
+</div>
+
+
+<h2>
+  Loading
+</h2>
+
+
+
+<div class="box-container">
+    <div class="box">
+      <pre>
+          <code>
+          var load= webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment'
+                });
+              
+              #JavaScript
+              load.remove();  
+               
+          </code>
+      </pre>
+  
+      
+      <button id="loading">  Default Loading </button>
+      <script>
+      $(loading).click(function(){
+           webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment'
+                });
+      })
+      </script>
+  
+    </div>
+  </div>
   
   
-
-    <script  src="../dist/webToast.min.js"></script>
-
-<script>
  
+ 
+
+<div class="box-container">
+    <div class="box">
+      <pre>
+          <code>
+          var load= webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment'
+                align:'topleft'
+                });
+              
+              #JavaScript
+              load.remove();  
+               
+          </code>
+      </pre>
+  
+      
+      <button id="loading2">  Loading -ALign top left</button>
+      <script>
+      $(loading2).click(function(){
+           webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment',
+                align:'topleft'
+                });
+      })
+      </script>
+  
+    </div>
+  </div>
+   
+ 
+ 
+
+<div class="box-container">
+    <div class="box">
+      <pre>
+          <code>
+          var load= webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment'
+                align:'topcenter',                
+                line:true 
+                });
+              
+              #JavaScript
+              load.remove();  
+               
+          </code>
+      </pre>
+  
+      
+      <button id="loading3">  Loading -ALign top Center</button>
+      <script>
+      $(loading3).click(function(){
+           webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment',
+                align:'topcenter',                
+                line:true 
+                });
+      })
+      </script>
+  
+    </div>
+  </div>
+   
+ 
+
+<div class="box-container">
+    <div class="box">
+      <pre>
+          <code>
+          var load= webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment'
+                align:'bottomleft'
+                });
+              
+              #JavaScript
+              load.remove();  
+               
+          </code>
+      </pre>
+  
+      
+      <button id="loading4">  Loading -ALign bottom left</button>
+      <script>
+      $(loading4).click(function(){
+           webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment',
+                align:'bottomleft'
+                });
+      })
+      </script>
+  
+    </div>
+  </div>
+   
+ 
+
+<div class="box-container">
+    <div class="box">
+      <pre>
+          <code>
+          var load= webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment'
+                align:'bottomright',                
+                line:true 
+                });
+              
+              #JavaScript
+              load.remove();  
+               
+          </code>
+      </pre>
+  
+      
+      <button id="loading5">  Loading with line progress-ALign bottom right</button>
+      <script>
+      $(loading5).click(function(){
+           webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment',
+                align:'bottomright',                
+                line:true 
+                });
+      })
+      </script>
+  
+    </div>
+  </div>
+   
+ 
+
+<div class="box-container">
+    <div class="box">
+      <pre>
+          <code>
+          var load= webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment'
+                align:'bottomcenter'
+                });
+              
+              #JavaScript
+              load.remove();  
+               
+          </code>
+      </pre>
+  
+      
+      <button id="loading6">  Loading -ALign bottom center</button>
+      <script>
+      $(loading6).click(function(){
+           webToast.loading({
+                status:'Loading...',
+                message:'Please Wait a moment',
+                align:'bottomcenter'
+                });
+      })
+      </script>
+  
+    </div>
+  </div>
+
+
+
+
+   
+
+
+  <h2 style="clear:both">Confirm box</h2>
+ 
+
+  
+
+<div class="box-container">
+    <div class="box">
+      <pre>
+          <code>
+    
 $("#conf").click(function(){
 
   var confirmBox= webToast.confirm('Are You Sure ?');
@@ -54,11 +650,35 @@ $("#conf").click(function(){
    
   }) 
 
-})
-
+}) 
+               
+          </code>
+      </pre>
   
-</script>
+      
+      <button id="conf">  Confirm Box</button>
+      <script>
+      
+$("#conf").click(function(){
 
+var confirmBox= webToast.confirm('Are You Sure ?');
+
+confirmBox.click(function(){
+  alert('confirmed Data');
+ 
+}) 
+
+}) 
+  
+      </script>
+  
+    </div>
+  </div>
+
+ 
+
+    <script  src="../dist/webToast.min.js"></script>
+ 
 
 </body>
 

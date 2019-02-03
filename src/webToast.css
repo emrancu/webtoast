@@ -1,30 +1,97 @@
- *{
+*{
   box-sizing:border-box
 
 }
   
-@keyframes slideleft {
+@keyframes slideRight {
     0% {transform: translateX(100px);}
   70% {transform: translateX(-30px);}
     100% {transform: translateX(0px);}
 }
+  
+@keyframes slideLeft {
+    0% {transform: translateX(-100px);}
+  70% {transform: translateX(30px);}
+    100% {transform: translateX(0px);}
+}
+  
+@keyframes slideDown {
+    0% {transform: translateY(-100px);}
+  70% {transform: translateY(30px);}
+    100% {transform: translateY(0px);}
+}
+  
+@keyframes slideUp {
+    0% {transform: translateY(100px);}
+  70% {transform: translateY(-30px);}
+    100% {transform: translateY(0px);}
+}
+
+  
+ 
+
+.toasttopright{
+  left: initial;
+  right: 20px;   
+  animation: slideRight .8s;
+}
+
+.toasttopleft{
+  left: 20px; 
+  animation: slideLeft .8s;
+}
+
+
+.toasttopcenter{
+  left: 0px;
+  right: 0px;
+  text-align: center;  
+  animation: slideDown .8s;
+}
+
+ 
+.toastbottomcenter{
+  left: 0px;
+  right: 0px;
+  bottom:20px;
+  top: initial !important;
+  text-align: center;  
+  animation: slideUp .8s;
+}
+ 
+.toastbottomleft{ 
+  bottom:20px;
+  top: initial !important; 
+  animation: slideLeft .8s;
+}
+ 
+.toastbottomright{ 
+  right:20px;
+  bottom:20px;
+  top: initial !important; 
+  animation: slideRight .8s;
+}
+
+ 
+ 
+ 
 .toastContainer{
   position:fixed;
-  top:20px;
-  right:20px;
+  top:20px; 
 }
+
 .webToast {
-  text-align:left;
+    display: inline-block;
+    text-align:left;
     padding: 10px 0;
     background-color:#fff;
     border-radius:4px;
     max-width: 500px;
     top: 0px;
     position:relative;
-       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-  
-  animation: slideleft .8s;
-  transition:all .8s
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    transition:all .8s ease-in;
+    z-index: 99999;
 }
 
 
@@ -44,7 +111,7 @@
 .toastIcon{
 position: absolute;
     top: 50%;
-    left: 22px;
+    left: 15px;
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
@@ -72,15 +139,16 @@ position: absolute;
   margin-bottom: 0;
     color: #878787;
 }
+ 
 
 .toastContent{
-  padding-left:70px;
-  padding-right:60px;
+  padding-left: 60px;
+  padding-right:40px;
 }
 
 .toast__close {
     position: absolute;
-    right: 22px;
+    right: 15px;
     top: 38%;
     width: 14px;
     cursor: pointer;
@@ -153,15 +221,15 @@ position: absolute;
 
 }
 
-.ConfirmConainer::after{
+.confirmBG{
   content: '';
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: rgba(0,0,0,.4);
-    z-index: -1;
+    background: rgba(0,0,0,.4); 
+
 }
 
 
@@ -173,6 +241,7 @@ position: absolute;
   height: 30px;
   -webkit-animation: spin 1s linear infinite; /* Safari */
   animation: spin 1s linear infinite;
+  margin-left: -6px;
 }
 
 /* Safari */
@@ -184,4 +253,27 @@ position: absolute;
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* top progress line */
+.line-loader{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 5px;
+    background-color:#1d72f3; 
+    background-image: linear-gradient( -45deg, rgba(255, 255, 255, .5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, .5) 75%, transparent 75%, transparent );
+    background-size: 30px 30px;
+    animation: move 1s linear infinite;
+}
+
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
 }
