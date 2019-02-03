@@ -1,5 +1,4 @@
 # webToast
-<<<<<<< HEAD
 <p>A jQuery plugin for alerting user and loading box.</p>
 <p> You can easily push  Danger, Info & Success alert to user  and you can show loading box when need load data from API.</p>
 <p>Check Details Demo <a target="_blank" href="https://alemran.me/demo/webToast">Here</a></p>
@@ -16,7 +15,7 @@
 
 $("#conf").click(function(){
 
-  var confirmBox= webToast.confirm({message:'Are You Sure ?',align:'topcenter'});
+  var confirmBox= webToast.confirm({message:'Are You Sure ?', align:'topcenter'});
   //var confirmBox= webToast.confirm('Are You Sure ?');
 
   confirmBox.click(function(){
@@ -34,7 +33,7 @@ $("#conf").click(function(){
 var Loading= webToast.loading({
                  status:'Loading...',
                  message:'Please Wait..',
-				 align:'topcenter'
+		 align:'topcenter'
                  });
    
 
@@ -50,20 +49,20 @@ setTimeout(function(){
 <pre>
  webToast.Success({
                  status:'Wow !',
-                 message:'You are success',,
-				 align:'topcenter'
+                 message:'You are success',
+		 align:'topcenter'
                    /* Default delay time 3 second */
                  })
       webToast.Info({
                  status:'Hello !',
-                 message:'I always try to learn',,
-				 align:'bottomcenter'
+                 message:'I always try to learn',
+	         align:'bottomcenter'
                  delay:false  /* Never hide autometically */
                  })
                  
      webToast.Danger({
-                 status:'Sorry !',,
-				 align:'topleft'
+                 status:'Sorry !',
+		 align:'topleft'
                  message:'I have failed to complete',
                  delay:5000 /* 5 second will stay */
                  })
