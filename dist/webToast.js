@@ -154,6 +154,7 @@ const confirmAction=function(confirmBtn,cancelBtn,ConfirmArea){
      hideToast(ConfirmArea);
   })
 
+   confirmBtn.focus();
   cancelBtn.click(function(){
     hideToast(ConfirmArea);
   })
