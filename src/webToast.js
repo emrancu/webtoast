@@ -103,12 +103,12 @@ const LoadingToast=function(options){
   let topLineProgress='';
 
   if(options.line==true){
-    topLineProgress='<div class="line-loader"></div>';
+    topLineProgress='<div class="webToast-line-loader"></div>';
   } 
    
   align=(options.align? (options.align).toLowerCase():'topright' );
  
-  htmlData= $('<div> '+topLineProgress+'<div class="toastContainer toast'+align+'" ><div  class="Loader webToast toastInfo"><div class="toastIcon" style="background:transparent"><div class="loader"></div> </div><div class="toastContent"><p class="toastStatus">'+ options.status +'</p><p class="toastMessage">'+options.message+'</p></div></div></div></div>');
+  htmlData= $('<div> '+topLineProgress+'<div class="toastContainer toast'+align+'" ><div  class="webToast"><div class="toastIcon" style="background:transparent"><div class="webToast-loader"></div> </div><div class="toastContent"><p class="toastStatus">'+ options.status +'</p><p class="toastMessage">'+options.message+'</p></div></div></div></div>');
  
     if(!cssPrepend){ 
     	AddStylehtmlData();
@@ -193,6 +193,3 @@ const confirmAction=function(confirmBtn,cancelBtn,ConfirmArea){
 
 
 })();
-
-
- 
