@@ -6,7 +6,7 @@ website:http://alemran.me
 
 "use strict";
 
-const webToast= (function() {
+const webToast= (function($) {
 
 // variable defining
  let i,htmlData,cssPrepend=false; 
@@ -192,4 +192,4 @@ const confirmAction=function(confirmBtn,cancelBtn,ConfirmArea){
   };
 
 
-})();
+})(jQuery);
