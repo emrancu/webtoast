@@ -24,7 +24,7 @@ const cssContent= "";
    
    /* function for hiding toast Message*/
 	 let hideToast= function(selector){
-				$(selector).fadeOut(1000, function() { selector.remove(); });
+				$(selector).fadeOut(500, function() { selector.remove(); });
 		}
     
     
@@ -122,12 +122,13 @@ $("#webtoast").append(htmlData);
     
 // confirm toast
 const ConfirmToast=function(options){
-  
+  console.log(options.description)
   align=(options.align? (options.align).toLowerCase():'topright' );
 
   htmlData= $('<div class=""><div class="confirmBG"></div><div class="toastContainer toast'+align+' ConfirmConainer"><div  class="webToast toastConfirm">'+ 
   '<div class="toastContent"> '+
   '<p class="toastMessage">'+(options.message?options.message:options)+'</p>'+
+  (options.description ? `<div class="confirm-description" > ${ options.description} </div>` : '' )+
   '<button data-confirm > Confirm </button><button data-cancel > Cancel </button></div> </div></div></div>');
    
    
@@ -139,8 +140,8 @@ $("#webtoast").append(htmlData);
 
 let confirmBtn=htmlData.find('button[data-confirm]');
 let cancelBtn=htmlData.find('button[data-cancel]');
-
-confirmAction(confirmBtn,cancelBtn,htmlData);
+  let focus = options.focus == false  ? false : true;
+  confirmAction(confirmBtn, cancelBtn, htmlData, focus);
 
 return confirmBtn;
 
@@ -148,12 +149,14 @@ return confirmBtn;
 
  
 
-const confirmAction=function(confirmBtn,cancelBtn,ConfirmArea){
+  const confirmAction = function (confirmBtn, cancelBtn, ConfirmArea, focus){
 
   confirmBtn.click(function(){
      hideToast(ConfirmArea);
   })
-
+    if (focus){
+      confirmBtn.focus();
+    }
   cancelBtn.click(function(){
     hideToast(ConfirmArea);
   })

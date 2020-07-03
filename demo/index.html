@@ -7,7 +7,7 @@
 		
   <title>WebToast</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
- 
+  <link rel="stylesheet" href="../src/webToast.css">
   <style>
 *{
   box-sizing: border-box
@@ -661,10 +661,10 @@ $("#conf").click(function(){
       
 $("#conf").click(function(){
 
-var confirmBox= webToast.confirm('Are You Sure ?');
+var confirmBox= webToast.confirm("Are you sure" );
 
 confirmBox.click(function(){
-  alert('confirmed Data');
+ // alert('confirmed Data');
  
 }) 
 
@@ -677,7 +677,7 @@ confirmBox.click(function(){
 
  
 
-    <script  src="../dist/webToast.min.js"></script>
+    <script  src="../src/webToast.js"></script>
  
 
 </body>

@@ -215,6 +215,27 @@
 }
 
 
+.ConfirmConainer {
+  top            : 0px;
+  bottom         : 0;
+  left           : 0;
+  right          : 0;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.ConfirmConainer .toastConfirm{ 
+  padding  : 20px;
+min-width: 400px;
+max-width: 100%;
+}
+
+.ConfirmConainer .confirm-description{
+padding: 10px 0;
+margin-bottom: 5px;
+}
+
 .toastConfirm>.toastContent {
   padding  : 0px 10px;
   min-width: 300px;
@@ -226,6 +247,8 @@
   border-bottom : 1px solid #ddd;
   margin-bottom : 6px;
   padding-bottom: 5px;
+  color: #1654b3;
+font-weight: bold;
 
 }
 
@@ -241,9 +264,13 @@
 }
 
 .toastConfirm>.toastContent button[data-confirm] {
-  border    : 1px solid green;
-  background: #1f6f1f;
+ border: 1px solid #0a5ede;
+background: #0a5ede;
 
+}
+
+.toastConfirm>.toastContent button[data-confirm]:focus {
+  border    : 2px solid #eae541;
 }
 
 .toastConfirm>.toastContent button[data-cancel] {
